@@ -30,7 +30,7 @@ body {
 }
 
 .label .heading {
-    font-family: "Unna-Regular", Helvetica, sans-serif; /* Ensure a fallback font is provided */
+    font-family: 'Unna', serif, Helvetica, sans-serif; /* Ensure a fallback font is provided */
     font-weight: 400;
     color: #0f1728;
     font-size: 72px;
