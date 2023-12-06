@@ -93,3 +93,15 @@ body {
     background-color: #000; /* Optional: Change background on hover */
     color: #fff; /* Optional: Change text color on hover */
 }
+
+.image-container {
+    text-align: center; /* This will center the img element if it is an inline element */
+    margin-top: 20px; /* Adjust this value as needed for spacing */
+}
+
+.image-container img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Image is a block element to respond to text-align center */
+    margin: 0 auto; /* Margin auto will center the image if it is a block element */
+}
