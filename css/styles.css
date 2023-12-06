@@ -27,7 +27,7 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 153px; /* You can adjust or remove the height if you want it to be flexible */
-    margin-top: 90px; /* Add some space above the heading */
+    margin-top: 150px; /* Add some space above the heading */
 }
 
 /* Style for the main heading text */
@@ -35,7 +35,7 @@ body {
     font-family: 'Unna', serif; /* Updated font family */
     font-weight: 400;
     color: #0f1728;
-    font-size: 72px; /* Size of the heading */
+    font-size: 65px; /* Size of the heading */
     text-align: center;
     letter-spacing: 3.6px;
     line-height: 79px;
