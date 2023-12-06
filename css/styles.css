@@ -14,9 +14,28 @@ body {
 /* Basic button styling */
 .button {
     padding: 10px 15px; /* Adjust as needed */
-    background-color: none; /* Button color */
+    background-color: #fdf8f2; /* Button color */
     color: black; /* Text color */
     border: none; /* Removes border */
     cursor: pointer; /* Changes cursor to pointer on hover */
     border-radius: 5px; /* Rounded corners */
+}
+
+.label {
+    display: flex; /* Use flex to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 153px; /* You can adjust or remove the height if you want it to be flexible */
+    margin-top: 42px; /* Add some space above the heading */
+}
+
+.label .heading {
+    font-family: "Unna-Regular", Helvetica, sans-serif; /* Ensure a fallback font is provided */
+    font-weight: 400;
+    color: #0f1728;
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 3.6px;
+    line-height: 79px;
+    margin: 0; /* Remove default paragraph margins */
 }
