@@ -9,6 +9,7 @@ body {
     align-items: center; /* Centers items vertically */
     gap: 8px; /* space between items */
     padding-top: 42px;
+    padding-bottom: 20px;
 }
 
 /* Basic button styling */
@@ -29,6 +30,18 @@ body {
     margin-top: 42px; /* Add some space above the heading */
 }
 
+/* Style for the main heading text */
+.heading {
+    font-family: 'Unna', serif; /* Updated font family */
+    font-weight: 400;
+    color: #0f1728;
+    font-size: 72px; /* Size of the heading */
+    text-align: center;
+    letter-spacing: 3.6px;
+    line-height: 79px;
+    margin: 0; /* Remove default margins */
+}
+
 .label .heading {
     font-family: 'Unna', serif, Helvetica, sans-serif; /* Ensure a fallback font is provided */
     font-weight: 400;
@@ -42,18 +55,20 @@ body {
 
 /* Style the container for the heading and supporting text */
 .label {
-    width: 804px;
-    margin: 0 auto; /* center the .label div */
-    text-align: center; /* center the text inside the .label div */
+    width: 100%; /* Take the full width of its container */
+    max-width: 804px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center the text inside the container */
+    padding: 20px; /* Add padding around the text */
 }
 
 /* This styles the supporting text under your heading */
 .supporting-text {
-    font-family: "Abel-Regular", Helvetica, sans-serif; /* Include a fallback font */
-    font-weight: 400;
+    max-width: 804px; /* Maximum width of the content */
+    margin: 20px auto; /* Top and bottom margin 20px, and center horizontally */
+    font-family: "Abel-Regular", sans-serif; /* Updated font family */
     color: #667084;
-    font-size: 24px; /* This sets the font size */
-    line-height: 30px; /* This sets the line height */
-    padding: 20px 0; /* This adds space above and below the text */
-    /* Remove position: fixed unless you specifically want the text to be fixed */
+    font-size: 24px;
+    line-height: 30px;
+    padding: 20px; /* Add padding around the text */
 }
