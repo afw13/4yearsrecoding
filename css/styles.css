@@ -1,3 +1,21 @@
 body {
     background-color: #fdf8f2;
 }
+
+/* Style for the frame container */
+.frame {
+    display: flex; /* Activates Flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 10px; /* Adds space between items */
+}
+
+/* Basic button styling */
+.button {
+    padding: 10px 15px; /* Adjust as needed */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Removes border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+}
