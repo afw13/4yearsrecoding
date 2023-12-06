@@ -13,8 +13,8 @@ body {
 /* Basic button styling */
 .button {
     padding: 10px 15px; /* Adjust as needed */
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
+    background-color: #fdf8f2(65, 100%, 50%); /* Button color */
+    color: black; /* Text color */
     border: none; /* Removes border */
     cursor: pointer; /* Changes cursor to pointer on hover */
     border-radius: 5px; /* Rounded corners */
