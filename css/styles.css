@@ -7,13 +7,14 @@ body {
     display: flex; /* Activates Flexbox */
     justify-content: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
-    gap: 10px; /* Adds space between items */
+    gap: 8px; /* space between items */
+    padding-top: 42px;
 }
 
 /* Basic button styling */
 .button {
     padding: 10px 15px; /* Adjust as needed */
-    background-color: #fdf8f2(65, 100%, 50%); /* Button color */
+    background-color: none; /* Button color */
     color: black; /* Text color */
     border: none; /* Removes border */
     cursor: pointer; /* Changes cursor to pointer on hover */
