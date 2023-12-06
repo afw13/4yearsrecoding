@@ -27,7 +27,7 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 153px; /* You can adjust or remove the height if you want it to be flexible */
-    margin-top: 55px; /* Add some space above the heading */
+    margin-top: 65px; /* Add some space above the heading */
 }
 
 /* Style for the main heading text */
