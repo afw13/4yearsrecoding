@@ -96,7 +96,7 @@ body {
 
 .image-container {
     text-align: center; /* This will center the img element if it is an inline element */
-    margin-top: 20px; /* Adjust this value as needed for spacing */
+    margin-top: 40px; /* Adjust this value as needed for spacing */
 }
 
 .image-container img {
@@ -104,4 +104,12 @@ body {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Image is a block element to respond to text-align center */
     margin: 0 auto; /* Margin auto will center the image if it is a block element */
+}
+.grey-line {
+    height: 2px; /* Thickness of the line */
+    background-color: grey; /* Color of the line */
+    margin-top: 40px; /* Distance from the image, adjust as needed */
+    margin-left: -20px; /* Extend the line to the left */
+    margin-right: -20px; /* Extend the line to the right */
+    width: calc(100% + 40px); /* Make the line longer than its container */
 }
