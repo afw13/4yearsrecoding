@@ -39,3 +39,21 @@ body {
     line-height: 79px;
     margin: 0; /* Remove default paragraph margins */
 }
+
+/* Style the container for the heading and supporting text */
+.label {
+    width: 804px;
+    margin: 0 auto; /* center the .label div */
+    text-align: center; /* center the text inside the .label div */
+}
+
+/* This styles the supporting text under your heading */
+.supporting-text {
+    font-family: "Abel-Regular", Helvetica, sans-serif; /* Include a fallback font */
+    font-weight: 400;
+    color: #667084;
+    font-size: 24px; /* This sets the font size */
+    line-height: 30px; /* This sets the line height */
+    padding: 20px 0; /* This adds space above and below the text */
+    /* Remove position: fixed unless you specifically want the text to be fixed */
+}
