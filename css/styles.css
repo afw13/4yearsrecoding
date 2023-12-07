@@ -109,8 +109,8 @@ body {
     height: 1px; /* Thickness of line */
     background-color: grey; 
     margin-top: 40px; /* Distance from the image */
-    margin-left: -20px; /* Extend the line to the left */
-    margin-right: -20px; /* Extend the line to the right */
+    margin-left: -10px; /* Extend the line to the left */
+    margin-right: -10px; /* Extend the line to the right */
     width: calc(100% + 40px); /* Make the line longer than container */
 }
 .data-section {
@@ -186,7 +186,7 @@ body {
 }
 
 .special-thanks-container p {
-    max-width: 804px; /* Maximum width of the content */
+    max-width: 750px; /* Maximum width of the content */
     margin-left: auto; /* Center the paragraph within the container */
     margin-right: auto; /* Center the paragraph within the container */
     font-family: 'Roboto', sans-serif;
