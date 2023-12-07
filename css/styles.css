@@ -125,16 +125,16 @@ body {
     text-align: center;
 }
 
-.data-text h3 {
+.data-text h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px; /* Adjust the size as needed */
-    color: #667084; /* Same color as your supporting text */
+    font-size: 32px; /* Adjust the size as needed */
+    color: #ffffff; /* Same color as your supporting text */
     margin-bottom: 20px; /* Space between the heading and paragraph */
 }
 
 .data-text p {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px; 
+    font-size: 18px; 
     color: #667084; /* Same color as your supporting text */
     line-height: 1.6; /* Adjust for readability */
 }
