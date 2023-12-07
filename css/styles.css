@@ -106,10 +106,45 @@ body {
     margin: 0 auto; /* Margin auto will center the image if it is a block element */
 }
 .grey-line {
-    height: 2px; /* Thickness of the line */
+    height: 1px; /* Thickness of the line */
     background-color: grey; /* Color of the line */
     margin-top: 40px; /* Distance from the image, adjust as needed */
     margin-left: -20px; /* Extend the line to the left */
     margin-right: -20px; /* Extend the line to the right */
     width: calc(100% + 40px); /* Make the line longer than its container */
+}
+.data-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px; /* Adjust based on your layout */
+}
+
+.data-text {
+    max-width: 50%; /* Adjust as needed */
+    text-align: center;
+}
+
+.data-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; /* Adjust the size as needed */
+    color: #667084; /* Same color as your supporting text */
+    margin-bottom: 20px; /* Space between the heading and paragraph */
+}
+
+.data-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+    color: #667084; /* Same color as your supporting text */
+    line-height: 1.6; /* Adjust for readability */
+}
+
+.data-image {
+    max-width: 50%; /* Adjust as needed */
+    text-align: right;
+}
+
+.data-image img {
+    max-width: 100%;
+    height: auto;
 }
