@@ -229,32 +229,28 @@ body {
 
 /* Footer styles */
 .site-footer {
-    background-color: #fdf8f2; /* Footer background color, same as body */
-    padding: 20px 0; /* Reduced padding only at the top */
+    background-color: #fdf8f2;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between; /* This separates footer content and social icons */
     align-items: center;
+    max-width: 80%; /* Match the max-width with the grey line */
+    margin-left: auto; /* Align to the center, but keep it within the left side */
+    margin-right: auto; /* Align to the center */
 }
 
-/* Footer content styles */
 .footer-content {
     text-align: left;
-    flex: 1; /* Take available space but limit with max-width */
-    max-width: 80%; /* Match the max-width with the grey line */
-    margin: 0 auto; /* Removed bottom margin to reduce space */
+    /* Remove flex: 1 if you're setting a max-width */
 }
 
-/* Social icons styles */
 .social-icons {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Align social icons to the right */
-    flex: 1;  /* Allow the container to grow and match footer content */
-    max-width: 80%; /* Match the max-width with the grey line */
-    margin: 0 auto; /* Align to the center */
+    /* Ensure the social icons are not stretching beyond the max-width */
 }
 
-/* Individual social icon styles */
 .social-icon {
     margin-left: 10px; /* Space between icons */
 }
