@@ -164,9 +164,11 @@ body {
     font-size: 16px; /* Adjust as needed */
     cursor: pointer; /* Hand cursor on hover */
     outline: none; /* Remove the outline to maintain the style on focus */
+    text-decoration: none;
 }
 
 .explore-data-button:hover {
     background-color: #000; /* Optional: Change background on hover */
     color: #fff; /* Optional: Change text color on hover */
+    text-decoration: none;
 }
