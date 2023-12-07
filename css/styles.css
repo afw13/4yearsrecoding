@@ -62,7 +62,6 @@ body {
     padding: 20px; /* Add padding around the text */
 }
 
-/* This styles the supporting text under your heading */
 .supporting-text {
     max-width: 804px; /* Maximum width of the content */
     margin: 20px auto; /* Top and bottom margin 20px, and center horizontally */
@@ -173,6 +172,7 @@ body {
     text-decoration: none;
 }
 .special-thanks-container {
+    max-width: 804px; /* Maximum width of the content */
     background-color: #FED501; 
     color: #0f1728; /* Text color - adjust as needed */
     padding: 40px; /* Add padding for spacing inside the container */
