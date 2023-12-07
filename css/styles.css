@@ -1,3 +1,4 @@
+/* Set background color for site */
 body {
     background-color: #fdf8f2; /*assign a background color to the entire pg */
 }
@@ -12,12 +13,12 @@ body {
     padding-bottom: 50px;
 }
 
-/* Basic nav button styling */
+/* Style for nav buttons */
 .button {
     padding: 10px 15px; 
     background-color: #fdf8f2; /* Button color */
     color: black; /* Text color */
-    border: none; /* Removes border around button */
+    border: none; /* Remove border around button */
     cursor: pointer; /* Change cursor to pointer on hover */
     border-radius: 5px; /* Round the corners */
     text-decoration: none;
@@ -27,19 +28,18 @@ body {
     padding: 10px 20px;
     background-color: #fdf8f2; /* Button color */
     color: black; /* Text color */
-    border: none; /* Removes border around button */
+    border: none; /* Remove border around button */
     cursor: pointer; /* Change cursor to pointer on hover */
     border-radius: 5px; /* Round the corners */
     text-decoration: none; /* No underline */
     display: inline-block; /* Necessary for padding and margin to work on <a> element */
     font-family: "Abel"; 
     font-size: 16px;
-    text-align: center; /* Center the text inside the button */
+    text-align: center; /* Center text inside the button */
 }
 
 .frame a.button:hover, .frame a.button:focus {
-    text-decoration: none; /* No underline on hover/focus */
-    /* You can add other styles for hover/focus state here */
+    text-decoration: none; /* No underline on hover or focus */
 }
 
 .label {
@@ -73,7 +73,7 @@ body {
     margin: 0; 
 }
 
-/* Style the container for the heading and supporting text */
+/* Style heading and supporting text */
 .label {
     width: 100%; /* Take the full width of its container */
     max-width: 804px; /* Max width of the content */
@@ -92,6 +92,8 @@ body {
     text-align: center;
     padding: 20px; /* Add padding around text */
 }
+
+/* Style for learn more button */
 .learn-more-container {
     text-align: center; /* Center the button horizontally */
     margin: 20px auto; 
@@ -102,7 +104,7 @@ body {
     background-color: transparent; /* Transparent background */
     color: #000; /* Text color */
     border: 1px solid #000; /* Black border */
-    border-radius: 20px; /* oval shape */
+    border-radius: 20px; /* oval */
     font-size: 16px; 
     cursor: pointer; 
     outline: none; 
@@ -113,6 +115,7 @@ body {
     color: #fff; /* Change text color on hover */
 }
 
+/* Style for geo shape image */
 .image-container {
     text-align: center; 
     margin-top: 40px; 
@@ -121,38 +124,40 @@ body {
 .image-container img {
     max-width: 100%; /* Make image responsive */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Image is a block element to respond to text-align center */
+    display: block; /* Block element to respond to text-align center */
     margin: 0 auto; 
 }
 
+/* Style for both grey lines */
 .grey-line {
     height: 1px; /* Thickness of line */
     background-color: grey;
-    width: 80%; /* Same width as the grey line */
-    margin: 40px auto 10px; /* 40px space above, centered horizontally, 60px space below */
+    width: 80%; /* width as the grey line; same as footer content */
+    margin: 40px auto 10px; /* 40px space above, centered horizontally, 10px space below */
 }
 
+/* Style for left data intro */
 .data-section {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Aligns children to the start of the container */
-    flex-wrap: wrap; /* Allows items to wrap if not enough space */
-    gap: 20px; /* You can control the gap between the text and the image */
+    justify-content: flex-start; /* Align children to the start of the container */
+    flex-wrap: wrap; /* Allow items to wrap if not enough space */
+    gap: 10px; /* You can control the gap between the text and the image */
     padding-left: 20px;
 }
 
 .data-text {
-    flex: 1; /* Allow the text to grow and fill up the flex container */
-    max-width: 30%; /* Adjust the width to be less than 50% to reduce space */
+    flex: 1; /* Allow text to grow and fill up the flex container */
+    max-width: 30%; /* Adjust width to be less than 50% to reduce space */
     text-align: center; /* Align center */
     margin: 0 auto;
 }
 
 .data-text h2 {
     font-family: 'Unna', serif;
-    font-size: 32px; /* Adjust the size as needed */
-    color: #000000; /* Same color as your supporting text */
-    margin-bottom: 20px; /* Space between the heading and paragraph */
+    font-size: 32px; 
+    color: #000000; 
+    margin-bottom: 20px; /* Space between heading and paragraph */
 }
 
 .data-text p {
@@ -162,6 +167,7 @@ body {
     line-height: 1.6; 
 }
 
+/* Style for right red brain img */
 .data-image {
     flex: 1; 
     max-width: calc(50% - 10px); /* Adjust the width to be less than 50% to reduce space */
@@ -172,6 +178,7 @@ body {
     height: auto;
 }
 
+/* Style for sample data button */
 .explore-data-button {
     padding: 10px 30px; /* Adjust padding to make the button oval-shaped */
     margin: 20px auto;
@@ -192,6 +199,8 @@ body {
     color: #fff; 
     text-decoration: none;
 }
+
+/* Style for special thanks section */
 .special-thanks-container {
     background-color: #FED501; 
     color: #0f1728; 
@@ -216,6 +225,7 @@ body {
     text-align: center;
 }
 
+/* Style for small heart */
 .heart-container {
     text-align: center; /* Center the image horizontally */
     padding-top: 20px; /* Add space between the text and the heart image */
@@ -227,7 +237,7 @@ body {
     height: auto; /* Maintain original image height */
 }
 
-/* Footer styles */
+/* Style for footer */
 .site-footer {
     background-color: #fdf8f2;
     padding: 5px 0;
