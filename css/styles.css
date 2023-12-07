@@ -116,10 +116,10 @@ body {
 .data-section {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the items to reduce extra space */
+    justify-content: flex-start; /* Aligns children to the start of the container */
     flex-wrap: wrap; /* Allows items to wrap if not enough space */
     gap: 20px; /* You can control the gap between the text and the image */
-    margin-top: 40px; /* Adjust based on your layout */
+    padding-left: 20px;
 }
 
 .data-text {
