@@ -172,7 +172,6 @@ body {
     text-decoration: none;
 }
 .special-thanks-container {
-    max-width: 804px; /* Maximum width of the content */
     background-color: #FED501; 
     color: #0f1728; /* Text color - adjust as needed */
     padding: 40px; /* Add padding for spacing inside the container */
@@ -186,6 +185,7 @@ body {
     }
 
 .special-thanks-container p {
+    max-width: 804px; /* Maximum width of the content */
     font-family: 'Roboto', sans-serif;
     font-size: 16px; 
     color: #000000; 
