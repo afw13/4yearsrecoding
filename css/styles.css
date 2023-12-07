@@ -116,13 +116,16 @@ body {
 .data-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Center the items to reduce extra space */
+    flex-wrap: wrap; /* Allows items to wrap if not enough space */
+    gap: 20px; /* You can control the gap between the text and the image */
     margin-top: 40px; /* Adjust based on your layout */
 }
 
 .data-text {
-    max-width: 25%; /* Adjust as needed */
-    text-align: center;
+    flex: 1; /* Allows the text to grow and fill up the flex container */
+    max-width: calc(50% - 10px); /* Adjust the width to be less than 50% to reduce space */
+    text-align: left; /* Align the text to the left */
 }
 
 .data-text h2 {
@@ -140,8 +143,8 @@ body {
 }
 
 .data-image {
-    max-width: 50%; /* Adjust as needed */
-    text-align: right;
+    flex: 1; /* Allows the image to grow and fill up the flex container */
+    max-width: calc(50% - 10px); /* Adjust the width to be less than 50% to reduce space */
 }
 
 .data-image img {
