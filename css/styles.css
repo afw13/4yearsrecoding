@@ -104,6 +104,7 @@ body {
     display: block; /* Image is a block element to respond to text-align center */
     margin: 0 auto; 
 }
+
 .grey-line {
     height: 1px; /* Thickness of line */
     background-color: grey; 
@@ -167,20 +168,20 @@ body {
 }
 
 .explore-data-button:hover {
-    background-color: #000; /* Optional: Change background on hover */
-    color: #fff; /* Optional: Change text color on hover */
+    background-color: #000; 
+    color: #fff; 
     text-decoration: none;
 }
 .special-thanks-container {
     background-color: #FED501; 
-    color: #0f1728; /* Text color - adjust as needed */
-    padding: 40px; /* Add padding for spacing inside the container */
-    text-align: center; /* Center the text if that is what's desired */
+    color: #0f1728; 
+    padding: 40px; 
+    text-align: center; 
 }
 .special-thanks-container h2 {
     font-family: 'Unna', serif;
-    font-size: 32px; /* Adjust the size as needed */
-    color: #000000; /* Same color as your supporting text */
+    font-size: 32px; 
+    color: #000000; 
     margin-bottom: 20px; /* Space between the heading and paragraph */
 }
 
@@ -189,8 +190,19 @@ body {
     margin-left: auto; /* Center the paragraph within the container */
     margin-right: auto; /* Center the paragraph within the container */
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: #000000;
-    line-height: 1.6; /* Adjust for readability */
+    line-height: 1.6; 
     text-align: center;
+}
+
+.heart-container {
+    text-align: center; /* Center the image horizontally */
+    padding-top: 20px; /* Add space between the text and the heart image */
+}
+
+.heart-container img {
+    display: inline-block; /* Allow block-level properties like margin */
+    width: auto; /* Maintai onriginal image width */
+    height: auto; /* Maintain original image height */
 }
