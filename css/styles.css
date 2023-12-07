@@ -65,7 +65,7 @@ body {
 .supporting-text {
     max-width: 804px; /* Max width of the content */
     margin: 20px auto; /* Top and bottom margin 20px, and center horizontally */
-    font-family: "Roboto", sans-serif; 
+    font-family: "Abel", sans-serif; 
     color: #667084;
     font-size: 18px;
     line-height: 30px;
@@ -137,7 +137,7 @@ body {
 }
 
 .data-text p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-size: 18px; 
     color: #667084; /* Same color as your supporting text */
     line-height: 1.6; /* Adjust for readability */
@@ -186,11 +186,11 @@ body {
 }
 
 .special-thanks-container p {
-    max-width: 750px; /* Maximum width of the content */
+    max-width: 700px; /* Maximum width of the content */
     margin-left: auto; /* Center the paragraph within the container */
     margin-right: auto; /* Center the paragraph within the container */
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
     color: #000000;
     line-height: 1.6; 
     text-align: center;
