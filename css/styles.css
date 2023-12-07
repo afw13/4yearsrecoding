@@ -178,6 +178,16 @@ body {
     padding: 40px; /* Add padding for spacing inside the container */
     text-align: center; /* Center the text if that is what's desired */
 }
-.special-thanks-container h3 {
-    margin-bottom: 20px; 
-}
+.special-thanks-container h2 {
+    font-family: 'Unna', serif;
+    font-size: 32px; /* Adjust the size as needed */
+    color: #000000; /* Same color as your supporting text */
+    margin-bottom: 20px; /* Space between the heading and paragraph */
+    }
+
+.special-thanks-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    color: #000000; 
+    line-height: 1.6; /* Adjust for readability */
+    }
