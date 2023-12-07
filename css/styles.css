@@ -33,7 +33,7 @@ body {
     text-decoration: none; /* No underline */
     display: inline-block; /* Necessary for padding and margin to work on <a> element */
     font-family: "Abel"; 
-    font-size: 14px;
+    font-size: 16px;
     text-align: center; /* Center the text inside the button */
 }
 
@@ -180,6 +180,7 @@ body {
     color: #000; /* Text color */
     border: 1px solid #000; /* Black border */
     border-radius: 20px; /* Large border radius for oval shape */
+    font-family: "Abel";
     font-size: 16px; 
     cursor: pointer; 
     outline: none; /* Remove the outline to maintain the style on focus */
@@ -226,28 +227,32 @@ body {
     height: auto; /* Maintain original image height */
 }
 
+/* Footer styles */
 .site-footer {
     background-color: #fdf8f2; /* Footer background color, same as body */
     padding: 20px 0; /* Padding only at the top and bottom */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* This separates footer content and social icons */
     align-items: center;
 }
 
+/* Footer content styles */
 .footer-content {
     text-align: left;
     flex: 1; /* Take available space but limit with max-width */
     max-width: 80%; /* Match the max-width with the grey line */
-    margin-left: auto; /* Align to the center */
+    margin-left: auto; /* Align to the center, but keep it within the left side */
     margin-right: auto; /* Align to the center */
 }
 
+/* Social icons styles */
 .social-icons {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align social icons to the right */
 }
 
+/* Individual social icon styles */
 .social-icon {
     margin-left: 10px; /* Space between icons */
 }
