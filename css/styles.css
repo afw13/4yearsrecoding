@@ -23,6 +23,29 @@ body {
     text-decoration: none;
 }
 
+.frame a.button {
+    padding: 10px 15px;
+    background-color: #fdf8f2; /* Button color */
+    color: black; /* Text color */
+    border: none; /* Removes border around button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Round the corners */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Necessary for padding and margin to work on <a> element */
+    font-family: inherit; /* Inherit the font from the parent */
+    font-size: inherit; /* Inherit the font size from the parent */
+    text-align: center; /* Center the text inside the button */
+}
+
+.frame a.button .text {
+    /* If you have specific styles for .text, add them here */
+}
+
+.frame a.button:hover, .frame a.button:focus {
+    text-decoration: none; /* No underline on hover/focus */
+    /* You can add other styles for hover/focus state here */
+}
+
 .label {
     display: flex; /* Use flex to center the content */
     justify-content: center; /* Center horizontally */
