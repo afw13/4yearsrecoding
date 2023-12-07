@@ -230,7 +230,7 @@ body {
 
 .site-footer {
     background-color: #fdf8f2; /* Footer background color, same as body */
-    padding: 40px 40px; /* Top and bottom padding of 20px, left and right padding of 40px */
+    padding: 40px 20px; /* Top and bottom padding of 20px, left and right padding of 40px */
 }
 
 .footer-content {
