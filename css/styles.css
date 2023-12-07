@@ -124,13 +124,13 @@ body {
 
 .data-text {
     flex: 1; /* Allows the text to grow and fill up the flex container */
-    max-width: 40%; /* Adjust the width to be less than 50% to reduce space */
+    max-width: 30%; /* Adjust the width to be less than 50% to reduce space */
     text-align: center; /* Align center */
     margin: 0 auto;
 }
 
 .data-text h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Unna', serif;
     font-size: 32px; /* Adjust the size as needed */
     color: #000000; /* Same color as your supporting text */
     margin-bottom: 20px; /* Space between the heading and paragraph */
