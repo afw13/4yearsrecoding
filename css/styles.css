@@ -121,14 +121,14 @@ body {
 }
 
 .data-text {
-    max-width: 50%; /* Adjust as needed */
+    max-width: 25%; /* Adjust as needed */
     text-align: center;
 }
 
 .data-text h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 32px; /* Adjust the size as needed */
-    color: #ffffff; /* Same color as your supporting text */
+    color: #000000; /* Same color as your supporting text */
     margin-bottom: 20px; /* Space between the heading and paragraph */
 }
 
