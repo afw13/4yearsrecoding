@@ -230,7 +230,7 @@ body {
 /* Footer styles */
 .site-footer {
     background-color: #fdf8f2; /* Footer background color, same as body */
-    padding: 20px 0; /* Padding only at the top and bottom */
+    padding: 20px 0; /* Reduced padding only at the top */
     display: flex;
     justify-content: space-between; /* This separates footer content and social icons */
     align-items: center;
@@ -241,8 +241,7 @@ body {
     text-align: left;
     flex: 1; /* Take available space but limit with max-width */
     max-width: 80%; /* Match the max-width with the grey line */
-    margin-left: auto; /* Align to the center, but keep it within the left side */
-    margin-right: auto; /* Align to the center */
+    margin: 0 auto; /* Removed bottom margin to reduce space */
 }
 
 /* Social icons styles */
@@ -250,6 +249,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Align social icons to the right */
+    flex: 1;  /* Allow the container to grow and match footer content */
+    max-width: 80%; /* Match the max-width with the grey line */
+    margin: 0 auto; /* Align to the center */
 }
 
 /* Individual social icon styles */
