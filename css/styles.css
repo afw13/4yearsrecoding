@@ -132,7 +132,7 @@ body {
 .grey-line {
     height: 1px; /* Thickness of line */
     background-color: grey;
-    margin-top: 40px; /* Distance from the image */
+    margin-top: px; /* Distance from the image */
     margin-left: 0; /* No extension to the left */
     margin-right: 0; /* No extension to the right */
     width: 80%; /* Adjust to desired width, less than 100% */
