@@ -131,11 +131,12 @@ body {
 
 .grey-line {
     height: 1px; /* Thickness of line */
-    background-color: grey; 
+    background-color: grey;
     margin-top: 40px; /* Distance from the image */
-    margin-left: -10px; /* Extend the line to the left */
-    margin-right: -10px; /* Extend the line to the right */
-    width: calc(100% + 40px); /* Make the line longer than container */
+    margin-left: 0; /* No extension to the left */
+    margin-right: 0; /* No extension to the right */
+    width: 80%; /* Adjust to desired width, less than 100% */
+    margin: auto; /* This will center the line */
 }
 .data-section {
     display: flex;
