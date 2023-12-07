@@ -206,3 +206,20 @@ body {
     width: auto; /* Maintai onriginal image width */
     height: auto; /* Maintain original image height */
 }
+
+.site-footer {
+    background-color: #fdf8f2; /* Footer background color, same as body */
+    padding: 20px 40px; /* Top and bottom padding of 20px, left and right padding of 40px */
+}
+
+.footer-content {
+    max-width: 1200px; /* Or any maximum width you prefer */
+    margin: 0 auto; /* This will center the footer content and respect the max-width */
+    font-family: 'Abel', sans-serif; /* Your desired font */
+    color: #000; /* Black text color */
+    text-align: left; /* Align text to the left */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default paragraph margin */
+}
