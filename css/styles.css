@@ -230,7 +230,7 @@ body {
 /* Footer styles */
 .site-footer {
     background-color: #fdf8f2;
-    padding: 20px 0;
+    padding: 5px 0;
     display: flex;
     justify-content: space-between; /* This separates footer content and social icons */
     align-items: center;
