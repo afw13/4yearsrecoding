@@ -37,10 +37,6 @@ body {
     text-align: center; /* Center the text inside the button */
 }
 
-.frame a.button .text {
-    /* If you have specific styles for .text, add them here */
-}
-
 .frame a.button:hover, .frame a.button:focus {
     text-decoration: none; /* No underline on hover/focus */
     /* You can add other styles for hover/focus state here */
