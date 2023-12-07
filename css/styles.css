@@ -24,7 +24,7 @@ body {
 }
 
 .frame a.button {
-    padding: 10px 15px;
+    padding: 10px 20px;
     background-color: #fdf8f2; /* Button color */
     color: black; /* Text color */
     border: none; /* Removes border around button */
@@ -32,8 +32,8 @@ body {
     border-radius: 5px; /* Round the corners */
     text-decoration: none; /* No underline */
     display: inline-block; /* Necessary for padding and margin to work on <a> element */
-    font-family: inherit; /* Inherit the font from the parent */
-    font-size: inherit; /* Inherit the font size from the parent */
+    font-family: "Abel"; 
+    font-size: 12px;
     text-align: center; /* Center the text inside the button */
 }
 
@@ -128,12 +128,10 @@ body {
 .grey-line {
     height: 1px; /* Thickness of line */
     background-color: grey;
-    margin-top: 60px; /* Increased distance from the image */
-    margin-bottom: 20px; /* If you want to add space below the line as well */
-    margin-left: auto; /* Center the line horizontally */
-    margin-right: auto; /* Center the line horizontally */
-    width: 80%; /* Adjust to desired width, less than 100% */
+    width: 80%; /* Same width as the grey line */
+    margin: 0 auto 60px; /* Centered horizontally with margin auto and space below */
 }
+
 .data-section {
     display: flex;
     align-items: center;
@@ -230,17 +228,31 @@ body {
 
 .site-footer {
     background-color: #fdf8f2; /* Footer background color, same as body */
-    padding: 20px 0; /* Top and bottom padding of 40px, no left and right padding */
+    padding: 20px 0; /* Padding only at the top and bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-content {
-    max-width: 80%; /* Match the max-width percentage of the grey line */
-    margin: 0 auto; /* This will center the footer content */
-    font-family: 'Abel', sans-serif; /* Your desired font */
-    color: #000; /* Black text color */
-    text-align: left; /* Align text to the left */
+    text-align: left;
+    flex: 1; /* Take available space but limit with max-width */
+    max-width: 80%; /* Match the max-width with the grey line */
+    margin-left: auto; /* Align to the center */
+    margin-right: auto; /* Align to the center */
 }
 
-.footer-content p {
-    margin: 0; /* Remove default paragraph margin */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    margin-left: 10px; /* Space between icons */
+}
+
+.social-icon img {
+    width: 24px; /* Set the size of your icons */
+    height: 24px;
 }
