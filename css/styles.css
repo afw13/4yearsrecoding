@@ -172,3 +172,12 @@ body {
     color: #fff; /* Optional: Change text color on hover */
     text-decoration: none;
 }
+.special-thanks-container {
+    background-color: #FED501; 
+    color: #0f1728; /* Text color - adjust as needed */
+    padding: 40px; /* Add padding for spacing inside the container */
+    text-align: center; /* Center the text if that is what's desired */
+}
+.special-thanks-container h3 {
+    margin-bottom: 20px; 
+}
