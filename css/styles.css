@@ -153,13 +153,10 @@ body {
     height: auto;
 }
 
-.explore-data-container {
-    text-align: center; /* Centers the button horizontally */
-    margin: 20px auto; /* Same top and bottom margin as the gap you want */
-}
-
 .explore-data-button {
     padding: 10px 30px; /* Adjust padding to make the button oval-shaped */
+    margin: 20px auto;
+    display: block;
     background-color: transparent; /* Transparent background */
     color: #000; /* Text color */
     border: 1px solid #000; /* Black border */
