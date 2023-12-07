@@ -33,7 +33,7 @@ body {
     text-decoration: none; /* No underline */
     display: inline-block; /* Necessary for padding and margin to work on <a> element */
     font-family: "Abel"; 
-    font-size: 12px;
+    font-size: 14px;
     text-align: center; /* Center the text inside the button */
 }
 
@@ -128,9 +128,8 @@ body {
 .grey-line {
     height: 1px; /* Thickness of line */
     background-color: grey;
-    margin-top: 30px; /* Distance from the image */
     width: 80%; /* Same width as the grey line */
-    margin: 0 auto 60px; /* Centered horizontally with margin auto and space below */
+    margin: 40px auto 60px; /* 40px space above, centered horizontally, 60px space below */
 }
 
 .data-section {
