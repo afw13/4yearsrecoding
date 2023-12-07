@@ -1,41 +1,41 @@
 body {
-    background-color: #fdf8f2;
+    background-color: #fdf8f2; /*assign a background color to the entire pg */
 }
 
 /* Style for the frame container */
 .frame {
-    display: flex; /* Activates Flexbox */
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
+    display: flex; /* Activate Flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
     gap: 8px; /* space between items */
     padding-top: 42px;
     padding-bottom: 50px;
 }
 
-/* Basic button styling */
+/* Basic nav button styling */
 .button {
-    padding: 10px 15px; /* Adjust as needed */
+    padding: 10px 15px; 
     background-color: #fdf8f2; /* Button color */
     color: black; /* Text color */
-    border: none; /* Removes border */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    border-radius: 5px; /* Rounded corners */
+    border: none; /* Removes border around button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Round the corners */
 }
 
 .label {
     display: flex; /* Use flex to center the content */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 153px; /* You can adjust or remove the height if you want it to be flexible */
+    height: 153px; 
     margin-top: 150px; /* Add some space above the heading */
 }
 
 /* Style for the main heading text */
 .heading {
-    font-family: 'Unna', serif; /* Updated font family */
+    font-family: 'Unna', serif; 
     font-weight: 400;
     color: #0f1728;
-    font-size: 65px; /* Size of the heading */
+    font-size: 65px; 
     text-align: center;
     letter-spacing: 3.6px;
     line-height: 79px;
@@ -43,38 +43,38 @@ body {
 }
 
 .label .heading {
-    font-family: 'Unna', serif, Helvetica, sans-serif; /* Ensure a fallback font is provided */
+    font-family: 'Unna', serif, Helvetica, sans-serif; 
     font-weight: 400;
     color: #0f1728;
     font-size: 72px;
     text-align: center;
     letter-spacing: 3.6px;
     line-height: 79px;
-    margin: 0; /* Remove default paragraph margins */
+    margin: 0; 
 }
 
 /* Style the container for the heading and supporting text */
 .label {
     width: 100%; /* Take the full width of its container */
-    max-width: 804px; /* Maximum width of the content */
+    max-width: 804px; /* Max width of the content */
     margin: 0 auto; /* Center the container */
     text-align: center; /* Center the text inside the container */
     padding: 20px; /* Add padding around the text */
 }
 
 .supporting-text {
-    max-width: 804px; /* Maximum width of the content */
+    max-width: 804px; /* Max width of the content */
     margin: 20px auto; /* Top and bottom margin 20px, and center horizontally */
-    font-family: "Roboto", sans-serif; /* Updated font family */
+    font-family: "Roboto", sans-serif; 
     color: #667084;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    padding: 20px; /* Add padding around the text */
+    padding: 20px; /* Add padding around text */
 }
 .learn-more-container {
-    text-align: center; /* Centers the button horizontally */
-    margin: 20px auto; /* Same top and bottom margin as the gap you want */
+    text-align: center; /* Center the button horizontally */
+    margin: 20px auto; 
 }
 
 .learn-more-button {
@@ -82,35 +82,35 @@ body {
     background-color: transparent; /* Transparent background */
     color: #000; /* Text color */
     border: 1px solid #000; /* Black border */
-    border-radius: 20px; /* Large border radius for oval shape */
-    font-size: 16px; /* Adjust as needed */
-    cursor: pointer; /* Hand cursor on hover */
-    outline: none; /* Remove the outline to maintain the style on focus */
+    border-radius: 20px; /* oval shape */
+    font-size: 16px; 
+    cursor: pointer; 
+    outline: none; 
 }
 
 .learn-more-button:hover {
-    background-color: #000; /* Optional: Change background on hover */
-    color: #fff; /* Optional: Change text color on hover */
+    background-color: #000; 
+    color: #fff; /* Change text color on hover */
 }
 
 .image-container {
-    text-align: center; /* This will center the img element if it is an inline element */
-    margin-top: 40px; /* Adjust this value as needed for spacing */
+    text-align: center; 
+    margin-top: 40px; 
 }
 
 .image-container img {
-    max-width: 100%; /* Makes the image responsive */
+    max-width: 100%; /* Make image responsive */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Image is a block element to respond to text-align center */
-    margin: 0 auto; /* Margin auto will center the image if it is a block element */
+    margin: 0 auto; 
 }
 .grey-line {
-    height: 1px; /* Thickness of the line */
-    background-color: grey; /* Color of the line */
-    margin-top: 40px; /* Distance from the image, adjust as needed */
+    height: 1px; /* Thickness of line */
+    background-color: grey; 
+    margin-top: 40px; /* Distance from the image */
     margin-left: -20px; /* Extend the line to the left */
     margin-right: -20px; /* Extend the line to the right */
-    width: calc(100% + 40px); /* Make the line longer than its container */
+    width: calc(100% + 40px); /* Make the line longer than container */
 }
 .data-section {
     display: flex;
@@ -182,13 +182,15 @@ body {
     font-size: 32px; /* Adjust the size as needed */
     color: #000000; /* Same color as your supporting text */
     margin-bottom: 20px; /* Space between the heading and paragraph */
-    }
+}
 
 .special-thanks-container p {
     max-width: 804px; /* Maximum width of the content */
+    margin-left: auto; /* Center the paragraph within the container */
+    margin-right: auto; /* Center the paragraph within the container */
     font-family: 'Roboto', sans-serif;
-    font-size: 16px; 
-    color: #000000; 
+    font-size: 16px;
+    color: #000000;
     line-height: 1.6; /* Adjust for readability */
     text-align: center;
-    }
+}
