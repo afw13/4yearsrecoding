@@ -5,6 +5,9 @@ In 2020, our mom was enrolled in the ReCODE Protocol™, a program targeting cog
 
 The first iteration of the ‘ReCoding’ project is also my final project for CS50.  For this project, I wanted to develop a website that would eventually provide a large data table for browsing and analysis.  For the first iteration of this project, the website links to a 14-day sample of the data, located in the project data sheet.  The website also includes some supporting resources related to the program.  All of these components will continue to evolve even after CS50 Fall 2023 ends. 
 
+### YouTube Intro Video:
+https://youtu.be/ZgHdS45dU50
+
 ### Components:
 This project has 4 main components:
 
