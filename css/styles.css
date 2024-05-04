@@ -269,21 +269,3 @@ body {
     width: 24px; 
     height: 24px;
 }
-
-/* Style for scroll button */
-#scrollToTopButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    background-color: #bebebe;
-    color: rgb(179, 179, 179);
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 25px;
-}
-
-#scrollToTopButton:hover {
-    background-color: #555;
-    color: white;
-}
