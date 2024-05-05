@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>4 Years Recoding</title>
+        <title>{% block title %}4 Years Recoding{% endblock %}</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,43 +33,47 @@
                 <p class="heading">4 Years ReCoding: <br />An Alzheimer's Journey In Data</p>
             </div>
         </div> 
-        <div class="supporting-text">
-            <p>
-            In 2020, our mom was enrolled in the ReCODE Protocol™, a program targeting cognitive decline reversal. Despite
-            its ineffectiveness for her, we hope our comprehensive daily dataset of supplements, meals, medications, and
-            biomarkers will benefit others.
-            </p>
-        </div>
-        <div class="learn-more-container">
-            <button class="learn-more-button">Learn More</button>
-        </div>
-        <div class="image-container">
-            <img src="{%static 'images/shapes.jpg' %}" alt="Colorful geometric shapes banner">
-        </div>
-        <div class="grey-line"></div>
-        <div class="data-section">
-            <div class="data-text">
-                <h2>The Data</h2>
-                <p>The dataset below was compiled to ensure strict adherence to the ReCode Protocol and to foster understanding. It originates from daily paper checklists, filled out by family members. <br><br>
-                These checklists are being gradually digitized to create this comprehensive digital dataset. It begins in March 2020 and, as of December 2023, is a work in progress. <br><br>
-                While we strive for accuracy, there may be errors, and we advise that the dataset be used with caution. It is not a substitute for professional medical advice, diagnosis, or treatment. <br><br>
-                This data is shared with full consent.</p>
-                <a href="https://docs.google.com/spreadsheets/d/1Dsz8fPc1VlIm4YQ_LZezPCjTr7TUmo5bykdtYQS9qlk/edit?usp=sharing" class="explore-data-button">See 14-Day Sample</a>
+        <main>
+            {% block content %}
+            <div class="supporting-text">
+                <p>
+                In 2020, our mom was enrolled in the ReCODE Protocol™, a program targeting cognitive decline reversal. Despite
+                its ineffectiveness for her, we hope our comprehensive daily dataset of supplements, meals, medications, and
+                biomarkers will benefit others.
+                </p>
             </div>
-            <div class="data-image">
-                <img src="{%static 'images/brain.png' %}" alt="Red brain">
+            <div class="learn-more-container">
+                <button class="learn-more-button">Learn More</button>
             </div>
-        </div>
-        <div class="special-thanks-container">
-            <h2>Special Thanks</h2>
-            <p>
-            This endeavor would not have been possible without the guidance and expertise from: <br><br>
-            Dr. Dale Bredesen, M.D., Dr. Frank DeMarco, M.D., Jen Felix, Julie Gregory, Dr. Melissa Piercell, N.D., Dr. Neil Nathan, M.D., Dr. Sara Henderson, N.D., Dr. Sharon Kelly, N.D., the Harvard CS50 team, the Deerfields Clinic, and the Toronto Memory Clinic.</p>
-            <div class="heart-container">
-                <img src="{%static 'images/heart.png' %}" alt="small white heart">
+            <div class="image-container">
+                <img src="{%static 'images/shapes.jpg' %}" alt="Colorful geometric shapes banner">
             </div>
-        </div>
-        <div class="grey-line"></div>
+            <div class="grey-line"></div>
+            <div class="data-section">
+                <div class="data-text">
+                    <h2>The Data</h2>
+                    <p>The dataset below was compiled to ensure strict adherence to the ReCode Protocol and to foster understanding. It originates from daily paper checklists, filled out by family members. <br><br>
+                    These checklists are being gradually digitized to create this comprehensive digital dataset. It begins in March 2020 and, as of December 2023, is a work in progress. <br><br>
+                    While we strive for accuracy, there may be errors, and we advise that the dataset be used with caution. It is not a substitute for professional medical advice, diagnosis, or treatment. <br><br>
+                    This data is shared with full consent.</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1Dsz8fPc1VlIm4YQ_LZezPCjTr7TUmo5bykdtYQS9qlk/edit?usp=sharing" class="explore-data-button">See 14-Day Sample</a>
+                </div>
+                <div class="data-image">
+                    <img src="{%static 'images/brain.png' %}" alt="Red brain">
+                </div>
+            </div>
+            <div class="special-thanks-container">
+                <h2>Special Thanks</h2>
+                <p>
+                This endeavor would not have been possible without the guidance and expertise from: <br><br>
+                Dr. Dale Bredesen, M.D., Dr. Frank DeMarco, M.D., Jen Felix, Julie Gregory, Dr. Melissa Piercell, N.D., Dr. Neil Nathan, M.D., Dr. Sara Henderson, N.D., Dr. Sharon Kelly, N.D., the Harvard CS50 team, the Deerfields Clinic, and the Toronto Memory Clinic.</p>
+                <div class="heart-container">
+                    <img src="{%static 'images/heart.png' %}" alt="small white heart">
+                </div>
+            </div>
+            <div class="grey-line"></div>
+        {% endblock %}
+        </main>
         <footer class="site-footer">
             <div class="footer-content">
                 <p>Dataset, content and website designed and developed by Annie White. ©2023 All rights reserved</p>
