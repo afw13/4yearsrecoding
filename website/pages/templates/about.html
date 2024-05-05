@@ -1,7 +1,18 @@
-{% extends 'layout_page.html' %}
+{% extends 'landing_page.html' %}
+
+{% load static %}
+
+{% block title %}
+  About - 4 Years ReCoding
+{% endblock %}
 
 {% block content %}
-  <div class="about-content">
-    <!-- About page content goes here -->
-  </div>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+</head>
+
+<div class="about-content">
+  <!-- About page content goes here -->
+</div>
+
 {% endblock %}
