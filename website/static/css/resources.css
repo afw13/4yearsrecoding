@@ -1,4 +1,4 @@
-body .about-title {
+body .resources-title {
     font-family: 'Unna', serif, Helvetica, sans-serif;
     font-weight: 400;
     color: #0f1728;
@@ -16,3 +16,22 @@ body .subtitle {
   margin-top: 10px; /* space above the subtitle */
   font-weight: normal;
 }
+
+.collapsible-item {
+    margin-bottom: 10px;
+  }
+  
+  .collapsible-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .collapsible-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .collapsible-content.show {
+    display: block;
+  }
