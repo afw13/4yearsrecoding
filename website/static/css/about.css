@@ -21,3 +21,17 @@ body .subtitle {
   margin-top: 10px; /* space above the subtitle */
   font-weight: normal;
 }
+
+/* CSS for the image container */
+.about-image {
+  text-align: center; /* Centers the image horizontally */
+  padding: 20px; /* Adds padding around the image */
+  margin: 0 auto; /* Ensures the container is centered */
+}
+
+/* CSS for the image itself */
+.about-image img {
+  max-width: 90%; /* Limits the image size to 90% of its container */
+  height: auto; /* Keeps the image's aspect ratio intact */
+  border: none; /* Optional: removes any border around the image */
+}
