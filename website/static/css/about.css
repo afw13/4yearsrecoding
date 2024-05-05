@@ -9,7 +9,9 @@
     color: #333;
   }
   
-  .about-subtitle {
-    font-size: 24px;
-    color: #666;
-  }
+.subtitle {
+  font-size: 18px;  /* smaller than the main heading */
+  color: #666;      /* less prominent color */
+  margin-top: 10px; /* space above the subtitle */
+  font-weight: normal;
+}
