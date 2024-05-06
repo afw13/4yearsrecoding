@@ -8,3 +8,6 @@ def about(request):
 
 def resources(request):
     return render(request, 'resources.html')
+
+def dataset(request):
+    return render(request, 'dataset.html')

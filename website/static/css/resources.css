@@ -17,12 +17,23 @@ body .subtitle {
   font-weight: normal;
 }
 
+.resources-content {
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
 .collapsible-item {
     margin-bottom: 10px;
   }
   
   .collapsible-header {
-    background-color: #f1f1f1;
+    font-family: 'Unna', serif, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #666;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color:#FED501;
     padding: 10px;
     cursor: pointer;
   }
@@ -34,4 +45,23 @@ body .subtitle {
   
   .collapsible-content.show {
     display: block;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    font-family: 'Abel', sans-serif; /* sans-serif font */
+    font-size: 14px;  /* smaller than the main heading */
+    color: #666;      
+    margin-top: 10px;
+    text-align: left;
   }

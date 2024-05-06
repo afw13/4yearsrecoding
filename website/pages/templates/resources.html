@@ -24,26 +24,52 @@
 
 <div class="resources-content">
     <section class="books-section">
-      <h2>Books</h2>
       <div class="collapsible-item">
-        <h3 class="collapsible-header">Book 1</h3>
+        <h3 class="collapsible-header">Books</h3>
         <div class="collapsible-content">
-          <!-- Book 1 content goes here -->
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="{% static 'images/book1.jpg' %}" alt="Book 1">
+              <p class="caption">The End of Alzheimer's, 2017</p>
+            </div>
+            <div class="grid-item">
+              <img src="{% static 'images/book2.jpg' %}" alt="Book 2">
+              <p class="caption">The End of Alzheimer's Program, 2020</p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Repeat the collapsible-item structure for each book -->
     </section>
   
     <section class="papers-section">
-      <h2>Papers</h2>
-      <div class="collapsible-item">
-        <h3 class="collapsible-header">Paper 1</h3>
-        <div class="collapsible-content">
-          <!-- Paper 1 content goes here -->
+        <div class="collapsible-item">
+          <h3 class="collapsible-header">Research Papers</h3>
+          <div class="collapsible-content">
+            <div class="grid-container">
+              <div class="grid-item">
+                <img src="{% static 'images/paper2014.png' %}" alt="Paper 1">
+                <p class="caption">Paper 1 Caption</p>
+              </div>
+              <div class="grid-item">
+                <img src="{% static 'images/paper2016.png' %}"alt="Paper 2">
+                <p class="caption">Paper 2 Caption</p>
+              </div>
+              <div class="grid-item">
+                <img src="{% static 'images/paper2018.png' %}" alt="Paper 3">
+                <p class="caption">Paper 3 Caption</p>
+              </div>
+              <div class="grid-item">
+                <img src="{% static 'images/paper2023.png' %}" alt="Paper 4">
+                <p class="caption">Paper 4 Caption</p>
+              </div>
+              <div class="grid-item">
+                <img src="{% static 'images/paper20232.png' %}" alt="Paper 5">
+                <p class="caption">Paper 5 Caption</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Repeat the collapsible-item structure for each paper -->
-    </section>
+      </section>
   </div>
 
 <!-- Grey line separator -->

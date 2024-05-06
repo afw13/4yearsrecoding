@@ -1,0 +1,18 @@
+body .about-title {
+    font-family: 'Unna', serif, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #0f1728;
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 3.6px;
+    line-height: 79px;
+    margin: 0;
+  }
+  
+body .subtitle { 
+  font-family: 'Abel', sans-serif; /* sans-serif font */
+  font-size: 32px;  /* smaller than the main heading */
+  color: #666;      /* less prominent color */
+  margin-top: 10px; /* space above the subtitle */
+  font-weight: normal;
+}

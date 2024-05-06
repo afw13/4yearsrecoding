@@ -1,0 +1,22 @@
+{% extends 'landing_page.html' %}
+
+{% load static %}
+
+{% block title %}
+    About - 4 Years ReCoding
+{% endblock %}
+
+{% block heading %}
+    <h1 class="about-title">4 Years ReCoding: </h1>  <!-- Changed class here -->
+    <h2 class="subtitle">DATASET</h2>  <!-- This will appear on a new line by default -->
+{% endblock %}
+
+{% block content %}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/datasetcss' %}">
+</head>
+
+<!-- Supporting text section -->
+<div class="supporting-text">
+    <p>This is the supporting text for the About page. It can contain informative details about the project, its goals, or any other relevant information you wish to include here. This text is styled with the class 'supporting-text' to ensure it follows the design guidelines established in the style.css.</p>
+</div>
