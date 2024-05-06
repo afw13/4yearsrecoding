@@ -25,7 +25,7 @@ class Command(BaseCommand):
                     lunch=row['LUNCH'],
                     dinner=row['DINNER'],
                     supplements=row['SUPPLEMENTS'],
-                    omega_3=row['OMEGA 3'],
+                    omega3=row['OMEGA 3'],
                     iron=row['IRON'],
                     b1=row['B1'],
                     d=row['D'],
