@@ -13,6 +13,33 @@ body {
     padding-bottom: 50px;
 }
 
+/* Mobile style */
+@media (max-width: 767px) {
+    .header {
+      padding: 5px 10px;
+    }
+    .navigation {
+      display: none;
+    }
+    .content {
+      font-size: 14px;
+    }
+    /* Style for the main heading text */
+    .heading {
+    font-family: 'Unna', serif; 
+    font-weight: 400;
+    color: #0f1728;
+    font-size: 5vw; 
+    text-align: center;
+    letter-spacing: 3.6px;
+    line-height: 1.2;
+    margin: 0; 
+    line-height: 1.2; /* Closer line height in smaller screens */
+    padding: 0 20px; /* Padding to prevent text touching the screen edges */
+    letter-spacing: normal; /* Less spacing in smaller screens */
+}
+  }
+
 /* Style for nav buttons */
 .button {
     padding: 10px 15px; 
@@ -48,18 +75,6 @@ body {
     align-items: center; /* Center vertically */
     height: 153px; 
     margin-top: 150px; /* Add some space above the heading */
-}
-
-/* Style for the main heading text */
-.heading {
-    font-family: 'Unna', serif; 
-    font-weight: 400;
-    color: #0f1728;
-    font-size: 65px; 
-    text-align: center;
-    letter-spacing: 3.6px;
-    line-height: 79px;
-    margin: 0; /* Remove default margins */
 }
 
 .label .heading {

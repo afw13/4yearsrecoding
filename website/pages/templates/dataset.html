@@ -7,13 +7,14 @@
 {% endblock %}
 
 {% block heading %}
-    <h1 class="dataset-title">4 Years ReCoding: </h1>  <!-- Changed class here -->
+    <h1 class="dataset-title">4 Years ReCoding: </h1>  
     <h2 class="subtitle">DATASET</h2>  <!-- This will appear on a new line by default -->
 {% endblock %}
 
 {% block content %}
 <head>
   <link rel="stylesheet" type="text/css" href="{% static 'css/dataset.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <!-- Supporting text section -->
@@ -21,13 +22,23 @@
     <p>This is the supporting text for the About page. It can contain informative details about the project, its goals, or any other relevant information you wish to include here. This text is styled with the class 'supporting-text' to ensure it follows the design guidelines established in the style.css.</p>
 </div>
 
+<div class="table-container"></div>
 <table id="dataset-table">
     <thead>
         <tr>
             <th>Date</th>
             <th>Notes</th>
             <th>MOCA</th>
-            <!-- Add more table headers based on your model fields -->
+            <th>Exercise</th>
+            <th>B</th>
+            <th>Biosense</th>
+            <th>Breakfast ACE</th>
+            <th>Lunch ACE</th>
+            <th>Dinner ACE</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+            <!-- Add more table headers here based on model fields -->
         </tr>
     </thead>
     <tbody>
@@ -36,17 +47,28 @@
             <td>{{ entry.date }}</td>
             <td>{{ entry.notes }}</td>
             <td>{{ entry.moca }}</td>
-            <!-- Add more table cells based on your model fields -->
+            <td>{{ entry.exercise }}</td>
+            <td>{{ entry.b }}</td>
+            <td>{{ entry.biosense }}</td>
+            <td>{{ entry.breakfast_ace }}</td>
+            <td>{{ entry.lunch_ace }}</td>
+            <td>{{ entry.dinner_ace }}</td>
+            <!-- Add more table cells here based on model fields -->
         </tr>
         {% endfor %}
     </tbody>
 </table>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('#dataset-table').DataTable();
+      $('#dataset-table').DataTable({
+        scrollX: true,
+        scrollCollapse: true,
+        fixedColumns: true
+      });
     });
-</script>
+  </script>
 {% endblock %}
