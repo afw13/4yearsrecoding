@@ -19,21 +19,19 @@ This project has 4 main components:
 
 4. **A codebase**.  The website relies on HTML, CSS, Python and Javascript, all available in Github.  
 
-# Introduction
+# Code 
 I began this project with a wireframe that I designed in Figma.  Designing the wireframe helped me to understand each “container” or section of the website.  With this wireframe complete, I set out to build each container and its elements, one by one. The code for this project is composed of HTML, CSS, Python and Javascript files and was designed with responsiveness in mind.
 
-### HTML:
+### HTML/CSS:
 
 The HTML for this project is straightforward.  To start, I built each section of the website in HTML: headings, supporting text, buttons, images, containers and a footer.
 
 I wanted to use some interesting fonts so the <head> contains a few links to various Google fonts that are used on the site.  
 
+
+
 ### CSS:
-
-Styling this website in CSS introduced many challenges.  
-
-The css code starts by setting a background color for the body and then style elements for the overall website frame.  I used Flexbox 
-(flex) here (and in a few other instances) to ensure some responsiveness on the site.  
+The css code starts by setting a background color for the body and then style elements for the overall website frame.  I used Flexbox (flex) here (and in a few other instances) to ensure some responsiveness on the site.  
 
 Buttons were used for navigation links.  In .frame a.button I just made sure that the background color matched the body color of the site so that they didn’t look like ‘buttons’.  
 
@@ -60,20 +58,19 @@ This website is designed with responsiveness in mind to provide an optimal viewi
 
 This project utilizes Django for backend development. Django's key features, such as URL routing, models, and views, were leveraged to create a scalable web application.
 
-### URL Patterns
+**Templating** 
+The HTML files in this project utilize Django's template inheritance feature to maintain a consistent structure and style across different pages. Each page extends from the landing_page.html base template using {% extends 'landing_page.html' %}. This setup allows specific sections like the title, heading, and content to be customized for each page (About, Resources, etc.) by overriding blocks defined in the base template ({% block title %}, {% block heading %}, and {% block content %}). 
 
+**URL Patterns**
 In this project, URL patterns were configured in the `urls.py` files to handle different routes and direct requests to the appropriate views. For example, the `/about/`, `/resources/`, and `/dataset/` URLs were mapped to their respective views to render the corresponding pages.
 
-### Models
-
+**Models**
 The `models.py` file in the `dataset` app defines the data models used in the project. The `DatasetEntry` model was created to represent the structure of the dataset, with fields corresponding to the columns in the CSV file. This model allows for efficient storage, retrieval, and manipulation of the dataset data using Django's Object-Relational Mapping (ORM).
 
-### Views
-
+**Views**
 In this project, views were implemented to render the appropriate templates and pass the necessary data to them. For instance, the `dataset_view` in `views.py` retrieves all the `DatasetEntry` objects from the database and passes them to the `dataset.html` template for rendering.
 
-### Database Integration
-
+**Database Integration**
 Django's built-in ORM was used to interact with the database. The `import_dataset` management command was created to import the dataset from a CSV file into the database. This command reads the CSV file, creates `DatasetEntry` instances for each row, and saves them to the database using Django's ORM.
 
 ## DataTables
