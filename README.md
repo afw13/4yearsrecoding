@@ -58,6 +58,5 @@ There is just one small section of Javascript on this site:  the scrollFunction.
 >> The Learn More button does not click out to anything 
 
 
-- responseivenss 
-Django 
+
 
