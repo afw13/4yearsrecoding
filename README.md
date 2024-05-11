@@ -5,6 +5,7 @@ In 2020, our mom was enrolled in the ReCODE Protocol™, a program targeting cog
 Extending the ‘ReCoding’ site with new skills learned from CS33 is my final project. For this project, I wanted to develop a website that would eventually provide a large data table for browsing and analysis. For this iteration of this project, the website links to a 14-day sample of the data, located in the project data sheet. The website also includes some supporting resources related to the program. All of these components will continue to evolve even after the course ends.
 
 ## YouTube Intro Video:
+https://youtu.be/k1VUR7nH4f0
 
 ## Code
 I began this project with a wireframe that I designed in Figma. Designing the wireframe helped me to understand each “container” or section of the website. With this wireframe complete, I set out to build each container and its elements, one by one. The code for this project is composed of HTML, CSS, Python and Javascript files and was designed with responsiveness in mind.
@@ -20,9 +21,13 @@ This project uses JavaScript to enhance interactivity and user experience by imp
 
 ## Responsivenss
 This website is designed with responsiveness in mind to provide an optimal viewing experience across a variety of devices, from desktops to smartphones. Key measures taken to ensure this include:
+
 **Viewport Meta Tag**: Each HTML file includes a tag, which controls the page's dimensions and scaling to match the device's width.
+
 **Flexible Layouts Using Flexbox**: Some CSS employs Flexbox in the .frame container to create layouts that adapt dynamically to the available space. This technique aligns items centrally and maintains a consistent gap, ensuring content is neatly organized and accessible on any screen size.
+
 **Responsive Typography and Element Sizing**: Some CSS uses relative units (vw, %, em) for font sizes and spacing. For instance, in the .heading class, font size is set in viewport widths (vw), which adjust according to screen size. This ensures that the typography is scalable and readable on different devices.
+
 **Media Queries**: Some custom media queries are implemented for devices with a maximum width of 767px. These queries adjust padding, font sizes, and other properties to improve readability and usability on smaller screens.
 
 ## Django Implementation
