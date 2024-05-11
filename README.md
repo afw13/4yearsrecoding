@@ -9,13 +9,13 @@ Extending the ‘ReCoding’ site with new skills learned from CS33 is my final 
 ## Code
 I began this project with a wireframe that I designed in Figma. Designing the wireframe helped me to understand each “container” or section of the website. With this wireframe complete, I set out to build each container and its elements, one by one. The code for this project is composed of HTML, CSS, Python and Javascript files and was designed with responsiveness in mind.
 
-# HTML/CSS:
+### HTML/CSS:
 [](https://github.com/afw13/4yearsrecoding/blob/main/README.md#htmlcss)The HTML for this project is straightforward. To start, I built each section of the website in HTML: headings, supporting text, buttons, images, containers and a footer. As described below, the HTML files in this project utilize Django's template inheritance feature to maintain a consistent structure. I wanted to use some interesting fonts so the contains a few links to various Google fonts that are used on the site.
 
 The css code starts by setting a background color for the body and then style elements for the overall website frame. I used Flexbox (flex) here (and in a few other instances) to ensure some responsiveness on the site. Buttons were used for navigation links. In .frame a.button I just made sure that the background color matched the body color of the site so that they didn’t look like ‘buttons’. Styling heading and supporting text was relatively simple. Here, I encountered the need to set max-width property so that the text wouldn’t spillover to both ends of the screen.
 Across the CSS files, getting the hang of the relationship between max-width, width, margin and padding properties was difficult. It took countless iterations to understand the change that would result by adjusting each property. For example, I wanted the .site-footer to display on the left of the page but also aligned with the left end of the .grey-line. With a bit of research I discovered that this would involve matching max-width of grey-line and site-footer to 80%;
 
-# Javascript:
+### Javascript:
 This project uses JavaScript to enhance interactivity and user experience by implementing collapsible sections on the Resources page. When the page loads, the script listens for the DOMContentLoaded event to ensure that the HTML is fully loaded before any JavaScript executes. The script then selects all elements with the class .collapsible-header and attaches a click event listener to each. Upon clicking any of these headers, the associated images, which is the next sibling in the HTML structure, has its visibility toggled. This is achieved by adding or removing the show class, which controls the display property of these content sections, making them collapsible. This feature allows for a clean and efficient way to manage the display of extensive content (that will likely grow in the future), improving usability and page navigation.
 
 ## Responsivenss
