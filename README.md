@@ -24,20 +24,11 @@ I began this project with a wireframe that I designed in Figma.  Designing the w
 
 ### HTML/CSS:
 
-The HTML for this project is straightforward.  To start, I built each section of the website in HTML: headings, supporting text, buttons, images, containers and a footer.
+The HTML for this project is straightforward.  To start, I built each section of the website in HTML: headings, supporting text, buttons, images, containers and a footer.  As described below, the HTML files in this project utilize Django's template inheritance feature to maintain a consistent structure. I wanted to use some interesting fonts so the <head> contains a few links to various Google fonts that are used on the site.  
 
-I wanted to use some interesting fonts so the <head> contains a few links to various Google fonts that are used on the site.  
+The css code starts by setting a background color for the body and then style elements for the overall website frame.  I used Flexbox (flex) here (and in a few other instances) to ensure some responsiveness on the site.  Buttons were used for navigation links.  In .frame a.button I just made sure that the background color matched the body color of the site so that they didn’t look like ‘buttons’.  Styling heading and supporting text was relatively simple.  Here, I encountered the need to set max-width property so that the text wouldn’t spillover to both ends of the screen. 
 
-
-
-### CSS:
-The css code starts by setting a background color for the body and then style elements for the overall website frame.  I used Flexbox (flex) here (and in a few other instances) to ensure some responsiveness on the site.  
-
-Buttons were used for navigation links.  In .frame a.button I just made sure that the background color matched the body color of the site so that they didn’t look like ‘buttons’.  
-
-Styling heading and supporting text was relatively simple.  Here, I encountered the need to set max-width property so that the text wouldn’t spillover to both ends of the screen. 
-
-Across the entire CSS code, getting the hang of the relationship between max-width, width, margin and padding properties was difficult. It took countless iterations to understand the change that would result by adjusting each property.  For example, I wanted the .site-footer to display on the left of the page but also aligned with the left end of the .grey-line.  With a bit of research I discovered that this would involve matching max-width of grey-line and site-footer to 80%; 
+Across the CSS files, getting the hang of the relationship between max-width, width, margin and padding properties was difficult. It took countless iterations to understand the change that would result by adjusting each property.  For example, I wanted the .site-footer to display on the left of the page but also aligned with the left end of the .grey-line.  With a bit of research I discovered that this would involve matching max-width of grey-line and site-footer to 80%; 
 
 ### Javascript:
 
@@ -78,11 +69,8 @@ To display the comprehensive dataset in a user-friendly tabular format on the we
 
 ## Known Issues:
 
->> The website currently exists as a single page.  In future iterations, I’d like to build out separate pages for the About, Research and Resources sections and add page content to each. 
+>> The implementation of DataTables (/dataset) is a work in progress.  There are a couple of columns that are not pulling in the correct data.  In a future iteration, I would like to extend the table to include all columns in the sample dataset.
+>> On the home page, when the screensize is reduced to mobile phone size, the page title is not responsive.  It responds well for all other screen sizes but I need to work on fixing this particular instance.     
 
->> The Learn More button does not click out to anything 
-
-
-- responseivenss 
 
 
