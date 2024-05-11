@@ -6,7 +6,7 @@ In 2020, our mom was enrolled in the ReCODE Protocol™, a program targeting cog
 Extending the ‘ReCoding’ site with new skills learned from CS33 is my final project.  For this project, I wanted to develop a website that would eventually provide a large data table for browsing and analysis.  For this iteration of this project, the website links to a 14-day sample of the data, located in the project data sheet.  The website also includes some supporting resources related to the program.  All of these components will continue to evolve even after the course ends. 
 
 ### YouTube Intro Video:
-https://youtu.be/ZgHdS45dU50
+
 
 ### Components:
 This project has 4 main components:
@@ -15,9 +15,9 @@ This project has 4 main components:
 
 2. **A website wireframe** designed in Figma.  I wanted to use this project as an opportunity to imporve my Figma skills.  Having a wireframe designed in advance, helped to pace my coding and keep it focused on distinct elements. 
 
-3. **A datasheet**.  Presently, this sheet contains a 14-day set of data, linked on the website.  Once the datasheet is more fully populated, it will be embedded on the website.
+3. **A sample datasheet**.  Presently, this sheet contains a 14-day set of data, linked on the website.  Once the datasheet is more fully populated, it will be embedded on the website.
 
-4. **A codebase**.  The website relies on HTML, CSS and Javascript, all available in Github.  
+4. **A codebase**.  The website relies on HTML, CSS, Python and Javascript, all available in Github.  
 
 # Introduction
 I began this project with a wireframe that I designed in Figma.  Designing the wireframe helped me to understand each “container” or section of the website.  With this wireframe complete, I set out to build each container and its elements, one by one. The code for this project is composed of HTML, CSS and Javascript files.  
@@ -49,9 +49,32 @@ Across the entire CSS code, getting the hang of the relationship between max-wid
 
 ### Javascript:
 
-There is just one small section of Javascript on this site:  the scrollFunction.  I implemented this as an easy way to try Javascript coding. 
+This project uses JavaScript to enhance interactivity and user experience by implementing collapsible sections on the Resources page. When the page loads, the script listens for the DOMContentLoaded event to ensure that the HTML is fully loaded before any JavaScript executes. The script then selects all elements with the class .collapsible-header and attaches a click event listener to each. Upon clicking any of these headers, the associated images, which is the next sibling in the HTML structure, has its visibility toggled. This is achieved by adding or removing the show class, which controls the display property of these content sections, making them collapsible. This feature allows for a clean and efficient way to manage the display of extensive content (that will likely grow in the future), improving usability and page navigation.
 
-### Known Issues:
+## Django Implementation
+
+This project utilizes Django for backend development. Django's key features, such as URL routing, models, and views, were leveraged to create a scalable web application.
+
+### URL Patterns
+
+In this project, URL patterns were configured in the `urls.py` files to handle different routes and direct requests to the appropriate views. For example, the `/about/`, `/resources/`, and `/dataset/` URLs were mapped to their respective views to render the corresponding pages.
+
+### Models
+
+The `models.py` file in the `dataset` app defines the data models used in the project. The `DatasetEntry` model was created to represent the structure of the dataset, with fields corresponding to the columns in the CSV file. This model allows for efficient storage, retrieval, and manipulation of the dataset data using Django's Object-Relational Mapping (ORM).
+
+### Views
+
+In this project, views were implemented to render the appropriate templates and pass the necessary data to them. For instance, the `dataset_view` in `views.py` retrieves all the `DatasetEntry` objects from the database and passes them to the `dataset.html` template for rendering.
+
+### Database Integration
+
+Django's built-in ORM was used to interact with the database. The `import_dataset` management command was created to import the dataset from a CSV file into the database. This command reads the CSV file, creates `DatasetEntry` instances for each row, and saves them to the database using Django's ORM.
+
+## DataTables
+To display the comprehensive dataset in a user-friendly tabular format on the website, the DataTables library was used. This involved integrating the necessary JavaScript and CSS files, creating an HTML table structure with headers corresponding to the dataset fields, and dynamically populating the table body with data from the Django model using a template loop. The DataTables plugin was then initialized on this table, enabling features like responsive behavior across different screen sizes. This implementation ensures that, as this dataset becomes larger, it can be easily explored and analyzed by visitors to the site.  It was also a great opportunity to try a library I had never used before (Thanks, Chris!)
+
+## Known Issues:
 
 >> The website currently exists as a single page.  In future iterations, I’d like to build out separate pages for the About, Research and Resources sections and add page content to each. 
 
@@ -59,5 +82,5 @@ There is just one small section of Javascript on this site:  the scrollFunction.
 
 
 - responseivenss 
-Django 
+
 
